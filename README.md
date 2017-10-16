@@ -1,0 +1,3 @@
+# SpringMVC_Spring_Hibernate
+SpringMVC_Spring_Hibernate
+以上三者的整合包 留待以后快速构建相关项目
