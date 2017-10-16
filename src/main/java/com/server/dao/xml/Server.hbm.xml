@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class dynamic-update="true" name="com.server.dao.vo.Server" table="server">
+<id name="id" type="java.lang.Integer">
+<column name="id"></column>
+<generator class="identity"></generator>
+</id>
+<property lazy="false" generated="never" name="serverIP" type="java.lang.String">
+<column name="address"></column>
+</property>
+<property lazy="false" generated="never" name="gameServerPort" type="java.lang.Integer">
+<column name="port"></column>
+</property>
+<property lazy="false" generated="never" name="webServerPort" type="java.lang.Integer">
+<column name="webPort"></column>
+</property>
+<property lazy="false" generated="never" name="serverName" type="java.lang.String">
+<column name="name"></column>
+</property>
+<property lazy="false" generated="never" name="fire" type="java.lang.Integer">
+<column name="fire"></column>
+</property>
+<property lazy="false" generated="never" name="status" type="java.lang.Integer">
+<column name="status"></column>
+</property>
+<property lazy="false" generated="never" name="chatIP" type="java.lang.String">
+<column name="serverChatAddress"></column>
+</property>
+<property lazy="false" generated="never" name="gameChatPort" type="java.lang.Integer">
+<column name="chatServerPort"></column>
+</property>
+<property lazy="false" generated="never" name="coserverId" type="java.lang.Integer">
+<column name="coserverId" default="0"></column>
+</property>
+</class>
+</hibernate-mapping>
